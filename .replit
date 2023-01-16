@@ -27,18 +27,18 @@ enabledForHosting = false
 [unitTest]
 language = "nodejs"
 
-[debugger]
+[debug]
 support = true
 
-[debugger.interactive]
+[debug.interactive]
 transport = "localhost:0"
 startCommand = ["dap-node"]
 
-[debugger.interactive.initializeMessage]
+[debug.interactive.initializeMessage]
 command = "initialize"
 type = "request"
 
-[debugger.interactive.initializeMessage.arguments]
+[debug.interactive.initializeMessage.arguments]
 clientID = "replit"
 clientName = "replit.com"
 columnsStartAt1 = true
@@ -51,11 +51,11 @@ supportsRunInTerminalRequest = true
 supportsVariablePaging = true
 supportsVariableType = true
 
-[debugger.interactive.launchMessage]
+[debug.interactive.launchMessage]
 command = "launch"
 type = "request"
 
-[debugger.interactive.launchMessage.arguments]
+[debug.interactive.launchMessage.arguments]
 args = []
 console = "externalTerminal"
 cwd = "."
